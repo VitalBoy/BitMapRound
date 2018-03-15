@@ -186,7 +186,7 @@ public class MainActivity extends Activity implements OnClickListener
 		}
 		paint.setXfermode( new PorterDuffXfermode( Mode.SRC_IN ) );//
 		https: // www.cnblogs.com/libertycode/p/6290497.html
-		canvas.drawBitmap( bitmaps, rect, rect, paint );
+		canvas.drawBitmap( bitmaps, rect, rect, paint );//这个需要是传入的Bitmap否则无法显示;
 		Log.i( "Pineapple", "bitmap" + ( bitmap == null ) );
 		imageView.setImageBitmap( bitmap );
 	}
